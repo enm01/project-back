@@ -45,7 +45,7 @@ public class Promotion {
     @Temporal(TemporalType.DATE)
     private Date dateReponseLALP;
 
-    @Column(name = "PROCESSUS_STAGE", columnDefinition = "VARCHAR2(5) DEFAULT 'RECH'")
+    @Column(name = "PROCESSUS_STAGE")
     private String processusStage = "RECH";
 
     @Column(name = "NO_EVALUATION")
@@ -62,8 +62,145 @@ public class Promotion {
     @JoinColumn(name = "CODE_FORMATION", referencedColumnName = "CODE_FORMATION", insertable = false, updatable = false)
     private Formation formation;
 
-    @Column(name = "CK_PRO_ETAT_PRESELECTION", columnDefinition = "CHECK (ETAT_PRESELECTION IN ('TER', 'ENC'))")
-    private String checkPromotionEtatPreselection;
+//    @Column(name = "CK_PRO_ETAT_PRESELECTION", columnDefinition = "CHECK (ETAT_PRESELECTION IN ('TER', 'ENC'))")
+//    private String checkPromotionEtatPreselection;
 
-    // Ajoutez les constructeurs, getters et setters selon vos besoins
+    public Promotion() {
+    }
+
+    public String getAnneePro() {
+        return anneePro;
+    }
+
+    public void setAnneePro(String anneePro) {
+        this.anneePro = anneePro;
+    }
+
+    public String getCodeFormation() {
+        return codeFormation;
+    }
+
+    public void setCodeFormation(String codeFormation) {
+        this.codeFormation = codeFormation;
+    }
+
+    public Long getNoEnseignant() {
+        return noEnseignant;
+    }
+
+    public void setNoEnseignant(Long noEnseignant) {
+        this.noEnseignant = noEnseignant;
+    }
+
+    public String getSiglePromotion() {
+        return siglePromotion;
+    }
+
+    public void setSiglePromotion(String siglePromotion) {
+        this.siglePromotion = siglePromotion;
+    }
+
+    public Integer getNbEtudiantsSouhaite() {
+        return nbEtudiantsSouhaite;
+    }
+
+    public void setNbEtudiantsSouhaite(Integer nbEtudiantsSouhaite) {
+        this.nbEtudiantsSouhaite = nbEtudiantsSouhaite;
+    }
+
+    public String getEtatPreselection() {
+        return etatPreselection;
+    }
+
+    public void setEtatPreselection(String etatPreselection) {
+        this.etatPreselection = etatPreselection;
+    }
+
+    public Date getDateRentree() {
+        return dateRentree;
+    }
+
+    public void setDateRentree(Date dateRentree) {
+        this.dateRentree = dateRentree;
+    }
+
+    public String getLieuRentree() {
+        return lieuRentree;
+    }
+
+    public void setLieuRentree(String lieuRentree) {
+        this.lieuRentree = lieuRentree;
+    }
+
+    public Date getDateReponseLP() {
+        return dateReponseLP;
+    }
+
+    public void setDateReponseLP(Date dateReponseLP) {
+        this.dateReponseLP = dateReponseLP;
+    }
+
+    public String getCommentaire() {
+        return commentaire;
+    }
+
+    public void setCommentaire(String commentaire) {
+        this.commentaire = commentaire;
+    }
+
+    public Date getDateReponseLALP() {
+        return dateReponseLALP;
+    }
+
+    public void setDateReponseLALP(Date dateReponseLALP) {
+        this.dateReponseLALP = dateReponseLALP;
+    }
+
+    public String getProcessusStage() {
+        return processusStage;
+    }
+
+    public void setProcessusStage(String processusStage) {
+        this.processusStage = processusStage;
+    }
+
+    public Integer getNoEvaluation() {
+        return noEvaluation;
+    }
+
+    public void setNoEvaluation(Integer noEvaluation) {
+        this.noEvaluation = noEvaluation;
+    }
+
+    public Integer getNoBareme() {
+        return noBareme;
+    }
+
+    public void setNoBareme(Integer noBareme) {
+        this.noBareme = noBareme;
+    }
+
+    public Enseignant getEnseignant() {
+        return enseignant;
+    }
+
+    public void setEnseignant(Enseignant enseignant) {
+        this.enseignant = enseignant;
+    }
+
+    public Formation getFormation() {
+        return formation;
+    }
+
+    public void setFormation(Formation formation) {
+        this.formation = formation;
+    }
+
+//    public String getCheckPromotionEtatPreselection() {
+//        return checkPromotionEtatPreselection;
+//    }
+//
+//    public void setCheckPromotionEtatPreselection(String checkPromotionEtatPreselection) {
+//        this.checkPromotionEtatPreselection = checkPromotionEtatPreselection;
+//    }
 }

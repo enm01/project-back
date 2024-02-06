@@ -76,8 +76,201 @@ public class Enseignant {
     @Column(name = "INT_PROF_TEL", length = 20)
     private String intProfTel;
 
-    @Column(name = "CK_ENS_SEXE", columnDefinition = "CHECK (SEXE IN ('H', 'F', 'L'))")
-    private String checkEnseignantSexe;
+//    @Column(name = "CK_ENS_SEXE", columnDefinition = "CHECK (SEXE IN ('H', 'F', 'L'))")
+//    private String checkEnseignantSexe;
 
-    // Ajoutez les constructeurs, getters et setters selon vos besoins
+    public Enseignant() {
+    }
+
+    public Long getNoEnseignant() {
+        return noEnseignant;
+    }
+
+    public void setNoEnseignant(Long noEnseignant) {
+        this.noEnseignant = noEnseignant;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getSexe() {
+        return sexe;
+    }
+
+    public void setSexe(String sexe) {
+        this.sexe = sexe;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public String getPrenom() {
+        return prenom;
+    }
+
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
+    }
+
+    public String getAdresse() {
+        return adresse;
+    }
+
+    public void setAdresse(String adresse) {
+        this.adresse = adresse;
+    }
+
+    public String getCodePostal() {
+        return codePostal;
+    }
+
+    public void setCodePostal(String codePostal) {
+        this.codePostal = codePostal;
+    }
+
+    public String getVille() {
+        return ville;
+    }
+
+    public void setVille(String ville) {
+        this.ville = ville;
+    }
+
+    public String getPays() {
+        return pays;
+    }
+
+    public void setPays(String pays) {
+        this.pays = pays;
+    }
+
+    public String getTelPort() {
+        return telPort;
+    }
+
+    public void setTelPort(String telPort) {
+        this.telPort = telPort;
+    }
+
+    public String getEncPersoTel() {
+        return encPersoTel;
+    }
+
+    public void setEncPersoTel(String encPersoTel) {
+        this.encPersoTel = encPersoTel;
+    }
+
+    public String getEncUboTel() {
+        return encUboTel;
+    }
+
+    public void setEncUboTel(String encUboTel) {
+        this.encUboTel = encUboTel;
+    }
+
+    public String getEncPersoEmail() {
+        return encPersoEmail;
+    }
+
+    public void setEncPersoEmail(String encPersoEmail) {
+        this.encPersoEmail = encPersoEmail;
+    }
+
+    public String getEncUboEmail() {
+        return encUboEmail;
+    }
+
+    public void setEncUboEmail(String encUboEmail) {
+        this.encUboEmail = encUboEmail;
+    }
+
+    public String getIntNoInsee() {
+        return intNoInsee;
+    }
+
+    public void setIntNoInsee(String intNoInsee) {
+        this.intNoInsee = intNoInsee;
+    }
+
+    public String getIntSocNom() {
+        return intSocNom;
+    }
+
+    public void setIntSocNom(String intSocNom) {
+        this.intSocNom = intSocNom;
+    }
+
+    public String getIntSocAdresse() {
+        return intSocAdresse;
+    }
+
+    public void setIntSocAdresse(String intSocAdresse) {
+        this.intSocAdresse = intSocAdresse;
+    }
+
+    public String getIntSocCodePostal() {
+        return intSocCodePostal;
+    }
+
+    public void setIntSocCodePostal(String intSocCodePostal) {
+        this.intSocCodePostal = intSocCodePostal;
+    }
+
+    public String getIntSocVille() {
+        return intSocVille;
+    }
+
+    public void setIntSocVille(String intSocVille) {
+        this.intSocVille = intSocVille;
+    }
+
+    public String getIntSocPays() {
+        return intSocPays;
+    }
+
+    public void setIntSocPays(String intSocPays) {
+        this.intSocPays = intSocPays;
+    }
+
+    public String getIntFonction() {
+        return intFonction;
+    }
+
+    public void setIntFonction(String intFonction) {
+        this.intFonction = intFonction;
+    }
+
+    public String getIntProfEmail() {
+        return intProfEmail;
+    }
+
+    public void setIntProfEmail(String intProfEmail) {
+        this.intProfEmail = intProfEmail;
+    }
+
+    public String getIntProfTel() {
+        return intProfTel;
+    }
+
+    public void setIntProfTel(String intProfTel) {
+        this.intProfTel = intProfTel;
+    }
+
+//    public String getCheckEnseignantSexe() {
+//        return checkEnseignantSexe;
+//    }
+//
+//    public void setCheckEnseignantSexe(String checkEnseignantSexe) {
+//        this.checkEnseignantSexe = checkEnseignantSexe;
+//    }
 }

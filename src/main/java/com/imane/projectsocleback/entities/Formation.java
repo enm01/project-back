@@ -31,8 +31,73 @@ public class Formation {
     @Temporal(TemporalType.DATE)
     private Date finHabilitation;
 
-    @Column(name = "CK_FRM_NO_ANNEE", columnDefinition = "CHECK (N0_ANNEE BETWEEN 1 AND 3)")
-    private int checkFormationAnnee;
+//    @Column(name = "CK_FRM_NO_ANNEE", columnDefinition = "CHECK (N0_ANNEE BETWEEN 1 AND 3)")
+//    private int checkFormationAnnee;
 
-    // Ajoutez les constructeurs, getters et setters selon vos besoins
+    public Formation() {
+    }
+
+    public String getCodeFormation() {
+        return codeFormation;
+    }
+
+    public void setCodeFormation(String codeFormation) {
+        this.codeFormation = codeFormation;
+    }
+
+    public String getDiplome() {
+        return diplome;
+    }
+
+    public void setDiplome(String diplome) {
+        this.diplome = diplome;
+    }
+
+    public int getNumeroAnnee() {
+        return numeroAnnee;
+    }
+
+    public void setNumeroAnnee(int numeroAnnee) {
+        this.numeroAnnee = numeroAnnee;
+    }
+
+    public String getNomFormation() {
+        return nomFormation;
+    }
+
+    public void setNomFormation(String nomFormation) {
+        this.nomFormation = nomFormation;
+    }
+
+    public String getDoubleDiplome() {
+        return doubleDiplome;
+    }
+
+    public void setDoubleDiplome(String doubleDiplome) {
+        this.doubleDiplome = doubleDiplome;
+    }
+
+    public Date getDebutHabilitation() {
+        return debutHabilitation;
+    }
+
+    public void setDebutHabilitation(Date debutHabilitation) {
+        this.debutHabilitation = debutHabilitation;
+    }
+
+    public Date getFinHabilitation() {
+        return finHabilitation;
+    }
+
+    public void setFinHabilitation(Date finHabilitation) {
+        this.finHabilitation = finHabilitation;
+    }
+
+//    public int getCheckFormationAnnee() {
+//        return checkFormationAnnee;
+//    }
+//
+//    public void setCheckFormationAnnee(int checkFormationAnnee) {
+//        this.checkFormationAnnee = checkFormationAnnee;
+//    }
 }
