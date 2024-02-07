@@ -31,7 +31,9 @@ public class GlobalController {
         User user = userService.authenticate(loginRequest.getUsername(), loginRequest.getPassword());
 
         if (user != null) {
+
             return ResponseEntity.ok("Login successful!");
+
         } else {
             return ResponseEntity.status(401).body("Invalid credentials");
         }
